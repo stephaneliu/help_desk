@@ -3,14 +3,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
 
+gem 'hotwire-rails'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 6.1.1'
+gem 'redis', '~> 4.0'
 gem 'sass-rails', '>= 6'
-gem 'hotwire-rails'
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'image_processing', '~> 1.2'
-# gem 'redis', '~> 4.0'
 
 gem 'bootsnap', '>= 1.4.4', require: false
 
@@ -20,7 +20,7 @@ end
 
 group :development do
   gem 'listen', '~> 3.3'
-  gem 'rack-mini-profiler', '~> 2.0'
+  # gem 'rack-mini-profiler', '~> 2.0'
   gem 'spring'
   gem 'web-console', '>= 4.1.0'
 end
